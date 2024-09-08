@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprenda Flexbox Brincando!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Aprenda Flexbox Brincando!</h1>
+        <input type="text" id="searchBox" placeholder="Pesquise...">
+    </header>
+
+    <main>
+        <section id="intro">
+            <h2>O que é Flexbox?</h2>
+            <p>O Flexbox é como uma caixa mágica que organiza as coisas dentro dela. Imagine que você tem várias caixinhas e pode pedir para elas se organizarem de várias formas! 😄</p>
+        </section>
+
+        <section id="example-1">
+            <h2>Exemplo 1: Arrumando Caixinhas</h2>
+            <p>Essas caixinhas podem ser arrumadas em linha ou coluna!</p>
+            <div class="flex-container" id="row-layout">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+            </div>
+            <button onclick="changeDirection('row-layout')">Trocar para Coluna</button>
+        </section>
+
+        <section id="example-2">
+            <h2>Exemplo 2: Alinhando Caixinhas</h2>
+            <p>As caixinhas podem ficar todas juntas ou espaçadas!</p>
+            <div class="flex-container" id="space-layout">
+                <div class="box">A</div>
+                <div class="box">B</div>
+                <div class="box">C</div>
+            </div>
+            <button onclick="changeAlignment('space-layout')">Trocar Espaçamento</button>
+        </section>
+
+        <section id="tips">
+            <h2>Dicas Divertidas!</h2>
+            <p>Você pode pedir para as caixinhas se organizarem como quiser. Vamos explorar mais!</p>
+            <ul>
+                <li><b>justify-content</b>: Manda as caixinhas para a esquerda, direita, ou centro!</li>
+                <li><b>align-items</b>: Controla como as caixinhas se alinham na vertical!</li>
+                <li><b>flex-wrap</b>: Diz se as caixinhas devem quebrar a linha ou não!</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Flexbox para Crianças</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
